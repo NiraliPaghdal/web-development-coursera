@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+
+div{
+    position: relative;
+    background-color: gray;
+    border: 3px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+p{
+    position: relative;
+    clear: right;
+}
+
+.mainHeading{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.content{
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    margin: 3px; 
+    height: 100px;
+    overflow: auto;
+}
+
+#heading1{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: pink;
+}
+
+#heading2{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+
+#heading3{
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/* DESKTOP */
+@media(min-width: 992px) {
+    .column-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+    .colmn-md-6 {
+        float: left;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .colmn-md-12 {
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* MOBILE */
+@media(max-width: 767px) {
+    .column-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
